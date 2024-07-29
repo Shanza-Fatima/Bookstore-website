@@ -1,29 +1,38 @@
 *{
     margin: 0;
     padding: 0;
+    
 
 }
 figure{
     display: flex;
     justify-content: center;
-    margin-top: -2opx;
+    margin-top: -20px;
+    
 }
+
 figure img{
     width: 200px;
+    margin-bottom: 0;
 }
 /*navbar*/
 nav{
     position: sticky;
-    background-color: rgba(59, 148, 155, 0.836);
+    background-color: #463d44ce;
     display: flex;
     justify-content: space-evenly;
     top: 0;
-    padding: 15px 5px 15px 5px;
+    padding: 16px 5px 16px 5px;
+    border-top: collapse;
+    width: 100%;
 }
 /*accessing anchor tag in navbar*/
 nav a{
-    color: #000;
+    color: #ffff;
     text-decoration: none;
+    font-weight: bolder;
+    background-color: #685866;
+    font-size: 18px;
 }
 nav a:hover{
     text-decoration: burlywood underline 3px;
@@ -34,6 +43,7 @@ nav a:hover{
     display: flex;
     justify-content: space-evenly;
     margin-right: 50px;
+    
 }
 .home div{
     padding-top: 140px;
@@ -43,6 +53,7 @@ nav a:hover{
     width: 400px;
     margin-left: 20px;
     margin-top: 20px;
+    
 
 }
 .home h2{
@@ -56,8 +67,14 @@ nav a:hover{
     margin-top: 20px;
     width : 250px;
     padding-left: 13px;
-    padding-right: 13px;
+    padding-right: 30px;
     border: 2px solid black;
+}
+.home i{
+    margin-left: -24px;
+    font-weight: bolder;
+    
+    
 }
 /*section*/
 section{
@@ -67,27 +84,33 @@ section{
     
 }
 #Shanza{
-    color: cadetblue;
-    font-size: 20px;
+    color: #695CFF;
+    font-size: 28px;
     font-weight: bolder;
+}
+section h3{
+    font-size: 25px;
 }
 section p{
     padding-top: 30px;
 }
-.group-cards{
+.group-cards1{
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    /*gap:10px;
+    padding: 10px;*/
     
 }
+
 #best-sellers{
     margin-left:30px;
-    text-decoration: rgba(59, 148, 155, 0.836) underline 3px;
+    text-decoration: #695CFF underline 3px;
 }
 .Books{
     border: 2px black solid;
     border-radius: 3px;
-    
+    background-color: #fff;
 }
 
 .Books h5{
@@ -95,45 +118,214 @@ section p{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    
 }
 .Books img{
-    height: 280px;
-    width: 240px;
-    border: 1px black solid;
+    height: 300px;
+    width: 260px;
+    border: 1px #000000 solid;
+
 }
 .Books button{
     padding: 5px 15px 5px 15px;
     border : 1px transparent solid;
     border-radius: 39px;
-    background-color: burlywood;
+    background-color: #695CFF;
+   /* background-color: #8F8698;*/
+    color: #ffff;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
 }
 .Books button:hover{
-    background-color: rgba(165, 42, 42, 0.74);
-    color: #000;
+    background-color: #483cd1;
+    color: #fff;
 }
 #Books{
     margin-left:30px;
-    text-decoration: rgba(59, 148, 155, 0.836) underline 3px;
-    margin-top: 30px;
+    text-decoration: #695CFF underline 3px;
+    padding-top: 30px;
+    padding-bottom:30px ;
 }
 
 .books-cards{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px ;
+   /* margin-top: 30px ;*/
+}
+.connect{
+    background-color: #cf9d9c;
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    border: 2px solid #463d44ce;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+.connect h3{
+    font-weight: bold;
+
+}
+.connect i{
+    font-size: 45px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+footer{
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+footer p{
+    font-size: medium;
+}
+footer :first-child{
+    font-size: large;
+}
+footer div a{
+    color: grey;
+    display: block;
+    font-size: medium;
+}
+footer img{
+    width: 30%;
+    margin-top: -100px;
+}
+.copyright{
+    margin-top: 70px;
+    text-align: center;
+}
+.copyright p{
+    color: grey;
+    font-size: medium;
 }
 
-
-@media (max-width:420px){
+@media (max-width:450px){
+   /* body{
+        width: 450px;
+    }*/
     figure{
         margin-top: -15px;
     }
     figure img{
         width: 100px;
+    }
+    nav{
+        padding: 12px 0px 12px 0px;
+        width: 100%;
+    }
+    nav a{
+        font-size: 14px;
+    }
+    .home{
+        margin-right: 10px;
+        margin-left: 14px;
+    }
+    .home div{
+        padding-top: 70px;
+        
+    }
+    .home img{
+        visibility: hidden;
+        image-resolution: 1080px;
+        position: fixed;
+        width:100px; 
+        height: 200px;   
+        margin-left: 10px;
+        margin-top: 30px;
+        
+    }
+    .home h2{
+        font-size: 8px;
+        margin-left: 60px;
+    }
+    .home input{
+        height: 30px;
+        width: 180px;
+        margin-top: 7px;
+        font-size: 12px;
+    }
+    .home i{
+        font-size: 14px;
+    }
+    section{
+        padding-top: 30px;
+        padding-bottom: 10px ;
+    }
+    #Shanza{
+        font-size: 20px;
+    }
+    section h3{
+        font-size: medium;
+    }
+    section p{
+        font-size : small;
+        padding-top:10px ;
+    }
+    .group-cards1{
+        display: flex;
+        flex-wrap: wrap;
+
+    }  
+  
+    .books-cards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .Books{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #Books{
+        padding-bottom: 20px;
+    }
+    /*connect*/
+    .connect{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .connect h3{
+        font-size: 10px;
+        
+    }
+    .connect i{
+        font-size: 25px;
+    }
+    /*footer*/
+    footer{
+        margin-left: 10px;
+    }
+    footer p{
+        font-size: 1.9vw;
+    }
+    footer div :first child{
+        font-size: 2vw;
+    }
+    footer div a{
+        font-size: 2vw;
+    }
+    footer img{
+        visibility: hidden;
+    }
+    .copyright p{
+        font-size: small;
+    }
+
+}
+@media (max-width:767px){
+    figure{
+        margin-top: -20px;
+    }
+    figure img{
+        width: 150px;
     }
     .home{
         margin-right: 10px;
@@ -143,42 +335,105 @@ section p{
         
     }
     .home img{
-        width:140px;
-        margin-left: 10px;
+        width: 260px;
+        margin-left: 20px;
         margin-top: 10px;
     }
     .home h2{
-        font-size: 20px;
-    
+        font-size: 26px;
+        
     }
     .home input{
-        height: 30px;
-        width: 130px;
+        height: 40px;
+        width: 200px;
         margin-top: 7px;
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .home i{
+        font-size: 14px;
     }
     section{
         padding-top: 30px;
         padding-bottom: 10px ;
     }
+    #Shanza{
+        font-size: 25px;
+    }
     section h3{
-        font-size: medium;
+        font-size: 20px;
     }
     section p{
-        font-size : small;
+        font-size : 15px;
         padding-top:10px ;
     }
-    .group-cards{
-        display: flex;
-        flex-wrap: wrap;
-
+    .group-cards1{
+        display: grid;
+        grid-row: 6;
+        grid-column: 4;
+        column-gap: 10px;
+        row-gap: 10px;
     }  
+
     .books-cards{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-row: 6;
+        grid-column: 4;
+        column-gap: 10px;
+        row-gap: 10px;
     }
     .Books{
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+    .connect h3{
+        font-size: 35px;
+        
+    }
+    .connect i{
+        font-size: 35px;
+    }
+    /*footer*/
+    footer p{
+        font-size: 2vw;
+    }
+    footer div :first child{
+        font-size: 2vw;
+    }
+    footer div a{
+        font-size: 2vw;
+    }
+    footer img{
+        width: 160px;
+        height: 200px;
+        margin-top: -60px;
+    }
+    .copyright p{
+        font-size: small;
+    }
+
+}
+@media (max-width:880px){
+    .home h2{
+        font-size: 35px;
+        margin-left: 14px;
+    }
+    .home input{
+        margin-left: 10px;
+    }
+    .group-cards1{
+        display: grid;
+        grid-row: 6;
+        grid-column: 4;
+        column-gap: 10px;
+        row-gap: 10px;
+    
+    } 
+    
+    .books-cards{
+        display: grid;
+        grid-row: 6;
+        grid-column: 4;
+        column-gap: 10px;
+        row-gap: 10px;
     }
 }
